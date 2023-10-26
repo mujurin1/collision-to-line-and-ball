@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <canvas id="canvas" width="600" height="600" style="background-color: rgb(94 94 94);"></canvas>
+  </div>
+
+  <label for="bounding">全て表示 (線分と線分で計算しようとした名残り)</label>
+  <input id="bounding" type="checkbox" onchange="switchViewAll()" />
+
+
+  <div>
+    緑ボールのサイズ:
+    <input id="radiusA" type="range" oninput="setRadiusA()" value="30" min="10" max="100">
+  </div>
+  <div>
+    青ボールのサイズ:
+    <input id="radiusB" type="range" oninput="setRadiusB()" value="30" min="10" max="100">
+  </div>
+
+  <script src="./const.js"></script>
+  <script src="./event.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
